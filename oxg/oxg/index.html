@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Puraniks | Oxygreen</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css" />
+<link rel="stylesheet" type="text/css" href="styles/animate.css" />
+<link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+</head>
+<body>
+<div class="super_container">
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header_content">
+					<div class="row">
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="logo">
+								<a href="http://mypropguru.com/oxg"><img src="images/logo.jpg" alt=""></a>
+							</div>
+						</div>
+						<div class="col-6 col-sm-9 col-md-12 col-lg-9">
+							<nav class="main_nav">
+								<ul>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#amenities">Amenities</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#floor-plans">Floor Plans</a></li>
+									<li><a href="#home">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column">
+			<ul class="mobile-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#floor-plans">Floor Plans</a></li>
+				<li><a href="#home">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+	<div class="home" id="home">
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div id="header-carousel" class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/City_View.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_title"><span class="tagline">The biggest launch of Bavdhan’s best address</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li><span>1 BHK</span></li>
+												<li><span>2 BHK</span></li>
+												<li><span>3 BHK</span></li>
+											</ul>
+										</div>
+										<div class="home_price">1 BHK starting at Rs.39.75 Lacs/- all inclusive</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/Puraniks_Oxygreen.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_title"><span class="tagline">The biggest launch of Bavdhan’s best address</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li><span>1 BHK</span></li>
+												<li><span>2 BHK</span></li>
+												<li><span>3 BHK</span></li>
+											</ul>
+										</div>
+										<div class="home_price">1 BHK starting at Rs.39.75 Lacs/-all inclusive</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</div>
+	</div>
+
+	<div class="register-form">
+		<div class="form-title">
+			<h3>Register For Free!</h3>
+		</div>
+		<form class="register-property" action="http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet" method="post">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="fname" name="fname" class="form-control" placeholder="Name*" required data-parsley-pattern="^[a-zA-Z\s]+$" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No*" maxlength="10" required pattern="[6|7|8|9][0-9]{9}" data-parsley-length="[10, 10]" data-parsley-trigger="keyup" onchange="manage(this)" onkeypress="return isNumber(event)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="mail" name="mail" class="form-control" placeholder="Email ID*" required data-parsley-type="email" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="city" name="city" class="form-control" placeholder="City*" required data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>				    
+				</div>-->				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		        	<input type="hidden" id="fname" name="company" value="TEST" />
+					<input type="hidden" id="fname" name="campaign" value="TEST-CAMPAIGN" />
+
+					<input type="hidden" name="source" id="source" value="FB" />
+		        	<input type="hidden" name="medium" id="medium" value="FB_Forms" />
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success"  disabled />
+					<!-- onclick="window.location.href='http://mypropguru.com/oxg/Thankyou.php';" -->
+				</div>												
+			</div>
+		</form>
+	</div>
+
+	<!-- Life in Nature -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2>About Puraniks</h2>
+				</div><br>
+				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 text-center">
+					<div class="abt-content">
+						<h4 class="text-left">The Puraniks Legacy</h4>
+						<p>We, Puranik Builders Ltd., have been successfully providing comprehensive residential and commercial solutions for 29 years. Our quality and innovative projects have helped win the trust of thousands of customers. The foundation that led us to these achievements is our firm belief and practice in delivering ‘Ideas that stay with you.</p><br>
+
+						<h4 class="text-left">Milestones</h4>
+						<ul>
+							<li>1. Successfully developed over 421,422 sq. mt. area across 29 completed projects</li>
+							<li>2. 24 ongoing projects across aggregate of 988,149 sq. mt. area</li>
+							<li>3. Presence in Thane, Pune, Lonavala and Neral</li>
+							<li>4. Trusted by thousands of happy customers</li>	
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-center">
+					<div class="contain-img space-bottom">
+						<img class="img-responsive" src="images/About_Img.jpg" alt="About" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Life in Nature -->
+
+	<div class="additional-features">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2>The most promising address in India’s most liveable city</h2>
+					<p>Pune has always been popular for its culture and educational institutes.
+					But in the recent past, it has come to be known for a lot more. And it’s not only the city’s IT industry. Locations like Bavdhan are attracting people in huge numbers by offering natural beauty as well as social infrastructure. So, let’s see what else makes Pune and Bavdhan such a favourite among homebuyers.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+					<div class="feature-box">
+						<h3>The Pune Advantage</h3>
+						<ul>
+							<li>Voted as India's most liveable city in Ease of Living index, 2018 released by the Ministry of Housing and Urban Affairs</li>
+							<li>Declared as a Smart City by the Government of India Second biggest IT hub in India</li>
+							<li>Strong manufacturing base in Auto and Engineering Called the ‘Oxford of the East’ for its 811 colleges</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+					<div class="feature-box">
+						<h3>The Bavdhan Advantage</h3>
+						<ul>
+							<li>Surrounded by Pashan Lake in north and hills on the other three sides, Bavdhan has seen gradual planned development</li>
+							<li>Proximity to Mumbai-Pune Express highway has sparked the area’s growth</li>
+							<li>Themed residences and high-end housing has been on a rise leading to appreciation in realty rates</li>
+							<li>Well poised to experience an appreciation above the rest of the market thanks to its location, infrastructure and connectivity</li>						
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>			
+
+	<!-- Amenities -->
+	<div class="amenities" id="amenities">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+				<div class="life-content">
+					<h3>Amenities</h3>
+					<ul>
+						<li>Children's Play Area</li>
+						<li>Club House</li>
+						<li>Indoor Gaming Zone</li>
+						<li>Outdoor Gaming Zone</li>
+						<li>Swimming Pool</li>
+						<li>Yoga/Meditation Zone</li>
+						<li>Gymnasium</li>
+					</ul>						
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-9 space">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/PLAY-AREA.jpg" alt="Children's Play Area" />
+							<h5>Children's Play Area</h5>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/club.jpg" alt="Club House" />
+							<h5>Club House</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/indoor-game.jpg" alt="Indoor Gaming Zone" />
+							<h5>Indoor Gaming Zone</h5>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/OUTDOOR-GAMING.jpg" alt="Outdoor Gaming Zone" />
+							<h5>Outdoor Gaming Zone</h5>
+						</div>
+					</div>													
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/SWIMMING-POOL.jpg" alt="Swimming Pool" />
+							<h5>Swimming Pool</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/yoga.jpg" alt="Yoga/Meditation Zone" />
+							<h5>Yoga/Meditation Zone</h5>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/Gymnasium.jpg" alt="Outdoor Gaming Zone" />
+							<h5>Gymnasium</h5>
+						</div>
+					</div>					
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- End Amenities -->	
+
+	<!-- Project Carousel -->
+	<div class="project-model" id="gallery">
+		<div class="regular-title">
+			<h2>Property Overview</h2>
+		</div>		
+		<div id="property-carousel" class="owl-carousel">
+			<div class="property-image">
+				<a href="images/Gallery/Puraniks_Oxygreen.jpg" data-fancybox data-caption="Puraniks Oxygreen View"><img class="img-responsive" src="images/Gallery/Puraniks_Oxygreen.jpg" alt="Puraniks Oxygreen View" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/SwimmingPool.jpg" data-fancybox data-caption="Oxygreen Swimming Pool"><img class="img-responsive" src="images/Gallery/SwimmingPool.jpg" alt="Oxygreen Swimming Pool" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Garden.jpg" data-fancybox data-caption="Garden"><img class="img-responsive" src="images/Gallery/Garden.jpg" alt="Garden" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/Gallery/Garden1.jpg" data-fancybox data-caption="Garden top View"><img class="img-responsive" src="images/Gallery/Garden1.jpg" alt="Garden top View" /></a>
+			</div>
+		</div>
+	</div> <!-- End Project Carousel -->
+
+	<div class="floor-plans" id="floor-plans">
+		<div class="regular-title">
+			<h2>Floor Plans</h2>
+		</div>
+
+		<div id="flat-plan-carousel" class="owl-carousel">
+			<div class="floor-plan-image">
+				<a href="images/Flats/Puranik_1BHK.jpg" data-fancybox data-caption="Vehicle Parking"><img class="img-responsive" src="images/Flats/Puranik_1BHK.jpg" alt="1 BHK" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Puranik_2BHK.jpg" data-fancybox data-caption="Vehicle Parking"><img class="img-responsive" src="images/Flats/Puranik_2BHK.jpg" alt="2 BHK Comfort" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Puranik_2BHK-1.jpg" data-fancybox data-caption="2 BHK Apartment"><img class="img-responsive" src="images/Flats/Puranik_2BHK-1.jpg" alt="2 BHK Luxury" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Puranik_3BHK.jpg" data-fancybox data-caption="3 BHK Apartment"><img class="img-responsive" src="images/Flats/Puranik_3BHK.jpg" alt="3 BHK Smart" /></a>
+			</div>			
+			<div class="floor-plan-image">
+				<a href="images/Flats/Puranik_Master.jpg" data-fancybox data-caption="Puranik Master Layout"><img class="img-responsive" src="images/Flats/Puranik_Master.jpg" alt="Puranik Master Layout" /></a>
+			</div>				
+		</div>	
+	</div>
+
+	<div class="site-location">
+		<div class="row no-gutters">
+			<div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+				<div class="location-map">
+					<h2>Nature and easy connectivity. A rare opportunity to enjoy both.</h2>
+					<img class="img-responsive" src="images/LocationMap.png" alt="Location Map" />
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+				<div class="conn-options">
+					<div class="variety-options">
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/SchoolBag.png" alt="School Bag" />
+									<h3>Schools</h3>
+									<ul>
+										<li>Sri Chaitanya</li>
+										<li>Techno School</li>
+										<li>Ryan International</li>
+										<li>Sanskruti School</li>
+										<li>New India School</li>
+										<li>Vidya Valley School</li>
+									</ul>
+								</div>							
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/IT_Building.png" alt="IT Building" />									
+									<h3>IT & Business</h3>
+									<ul>
+										<li>Hinjewadi IT Park</li>
+										<li>Cummins India</li>
+										<li>ICC Trade Tower</li>
+										<li>Calsoft</li>
+										<li>Oracle</li>
+									</ul>
+								</div>							
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/Cupcake.png" alt="Cupcake" />									
+									<h3>Entertainment & Shopping</h3>
+									<ul>
+										<li>Home Décor</li>
+										<li>More Supermarket</li>
+										<li>Oxford Golf Resort</li>
+										<li>City Pride Kothrud</li>
+										<li>Aditya Shagun Mall</li>
+									</ul>
+								</div>							
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/PiggyBank.png" alt="Piggy Bank" />									
+									<h3>Banks / ATMs</h3>
+									<ul>
+										<li>State Bank of India</li>
+										<li>HDFC Bank</li>
+										<li>ICICI Bank</li>
+										<li>Axis Bank</li>
+										<li>Bank of Maharashtra</li>
+									</ul>
+								</div>							
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/Healthcare.png" alt="Healthcare" />									
+									<h3>Healthcare</h3>
+									<ul>
+										<li>Chellaram Hospital</li>
+										<li>Opel Hospital</li>
+										<li>Sahyadari Hospital</li>
+										<li>Mangeshkar Hospital</li>
+										<li>Krishna Hospital</li>
+									</ul>
+								</div>							
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="options">
+									<img class="img-responsive" src="images/Restaurant.png" alt="Restaurant" />									
+									<h3>Restaurants & Hotels</h3>
+									<ul>
+										<li>D-Palace</li>
+										<li>Up and Above</li>
+										<li>Trikaya</li>
+										<li>VITS</li>
+										<li>JW Mariott</li>
+									</ul>
+								</div>							
+							</div>													
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer" id="contact">
+		<div class="footer_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Site Address</h4>
+								<p> Puraniks Abitante, Near Crystal Honda Service Station, Off Mumbai-Bangalore Highway, Bavdhan Budruk, Pune 411 021, Maharashtra, India.</p>
+							</div>
+						</div>
+					</div>				
+					<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<div class="footer_about_text">
+							<h4>Maharera</h4>
+						</div>						
+						<div class="footer_latest loans-available">
+							<a href="https://maharera.mahaonline.gov.in/" target="_blank"><img class="img-responsive maha-logo" src="images/maharera.png"></a>
+							<p class="mobile-text">Puraniks Abitante 2A - P52100020202 <br> Puraniks Abitante 2B - P52100020238</p>							
+						</div>
+					</div>				
+				</div><hr>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+						<span class="footer-disclaimer">Disclaimer: All information and images are for guidance only and subject to statutory approvals. The developer reserves the right to change the specifications without any notice.</span>						
+					</div>					
+				</div>
+			</div>
+		</div>		
+		<section class="footer_middle_area pt40 pb40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-11 col-xl-11">
+                        <div class="copyright-widget text-right">
+                            <p style="text-align:center;">
+                                Copyright © 2024,All rights reserved | Made In India With
+                                <span style="color: #fc5130;"><b>❤</b></span> Design by
+                                <a href="https://www.guruteck.com/" target="_blank" style="color:#fc5130;"><b>GuruTeck Solutions</b></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+<!--validation script start -->
+<script>  
+$(document).ready(function(){  
+    $('.register-property').parsley();
+ 
+ $('.register-property').on('submit', function(event){
+  event.preventDefault();
+  if($('.register-property').parsley().isValid())
+  {
+   $.ajax({
+    url:"http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet",
+    method:"POST",
+    data:$(this).serialize(),
+    beforeSend:function(){
+     $('#submit').attr('disabled','disabled');
+     $('#submit').val('Submitting...');
+    },
+    success:function(data)
+    {
+     $('.register-property')[0].reset();
+     $('.register-property').parsley().reset();
+     $('#submit').attr('disabled',false);
+     $('#submit').val('Submit');
+     alert(data);
+    }
+   });
+  }
+ });
+});  
+</script><!--validation script End -->
+
+<script type="text/javascript">
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+        
+        // LOOP THROUGH EACH ELEMENT.
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].type == 'text' && ele[i].value == '' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }    
+</script>
+
+<script type="text/javascript">
+    var fname = document.getElementById("fname");
+
+    var invalidChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    fname.addEventListener("keydown", function(e) {
+      if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+      }
+    });
+</script>
+
+<script type="text/javascript">
+	function isNumber(event) {
+	   event = (event) ? event : window.event;
+	   var charCode = (event.which) ? event.which : event.keyCode;
+	   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	       return false;
+	   }
+	       return true;
+	}
+	$('#fname, #phone, #mail').bind('keyup', function() {
+	    if(allFilled()) $('#submit').removeAttr('disabled');
+	});
+	        
+	function allFilled() {
+		var filled = true;
+	    $('body input').each(function() {
+	        if($(this).val() == '') filled = false;
+	    });
+	    return filled;
+	}	
+</script>
+
+<script>
+	$('.main_nav ul li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });
+	$('.mobile-menu li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });    
+     $(".navbar ul li a").click(function(){
+        $(".navbar-collapse").toggleClass("in");
+    });
+</script>
+
+<script type="text/javascript">
+	$("ul.mobile-menu li a").click(function (event) {
+        $(".menu.trans_500").toggleClass('active');
+    });
+</script>
+
+<script type="text/javascript">
+    $("#header-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#life-nature-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#property-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },             
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#flat-plan-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },            
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+</body>
+</html>

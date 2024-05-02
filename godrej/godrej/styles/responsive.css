@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+	
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+	
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+	
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	.main_nav
+	{
+		margin-left: 60px;
+	}
+	.main_nav ul li:not(:last-child)
+	{
+		margin-right: 40px;
+	}
+	.city
+	{
+		width: calc((100% - 27px) / 2);
+		margin-bottom: 26px;
+	}
+	.footer_nav
+	{
+		margin-left: 60px;
+	}
+	.footer_nav ul li:not(:last-child)
+	{
+		margin-right: 25px;
+	}
+
+	.life-content.white {padding: 50px 40px;}
+	p {line-height: 1.6;}
+	.amenities img {margin: 20px 0; padding: 0;}
+	.contain-img {height: auto !important;}
+	.life-convenient, .life-convenient.hands, .life-convenient.women {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.life-convenient {height: 728px;}
+	.life-convenient.women {height: 728px;}
+	.life-convenient.hands {height: 728px;}
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	
+}
+
+/************
+6. 991px
+************/
+
+@media(min-width: 993px) and (max-width: 1024px) {
+	.slide_content {max-width: 500px;}
+	.add-features .feature-content {padding: 35px 30px;}
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+	.home {height: 60vh; max-height: auto;}
+	.slide_content {max-width: 400px;}
+	.slide_container {top: 20%;}
+	.register-form {width: 40%; top: 2%; right: 20px;}
+	.hamburger {top: -55px !important;}
+	.hamburger i {color: #000;}
+	.contain-img {height: 588px !important;}
+	.life-convenient, .life-convenient.hands, .life-convenient.women {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	div#life-nature-carousel {height: 545px;}
+	.amenities img {margin: 20px 0; padding: 0;}
+	#about .life-content {padding: 60px 60px;}
+	.additional-features .feature-box {height: auto; padding-bottom: 0; margin-bottom: 0;}
+	.about-forest h2 {line-height: 1;}
+	.add-features .feature-content {padding: 30px 35px 10px 25px;}
+	.contain-img {height: 400px !important;}
+	.video-section p {margin: 30px 0;}
+	.about .abt-content {padding: 0;}
+	.footer .footer_latest p {text-align: left;}
+}
+
+@media only screen and (max-width: 991px)
+{
+	.logo {margin-left: 8px;}
+	.header_content
+	{
+		height: auto;
+	}
+	.main_nav
+	{
+		display: none;
+	}
+	.phone_num
+	{
+		display: none;
+	}
+	.hamburger
+	{
+		display: block;
+		position: absolute;
+    	top: -30px;
+    	right: 34px;
+	}
+	.home_title
+	{
+		font-size: 48px;
+	}
+	.home_price
+	{
+		font-size: 24px;
+		margin: 0;
+	}
+	.home_details {margin: 14px 0 12px 0;}
+	.home_search_container
+	{
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		height: auto;
+		margin-top: 80px;
+		margin-bottom: 130px;
+		background: linear-gradient(to right, #487fee, #32fa95);
+	}
+	.home_search_content
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.search_form_content > div
+	{
+		width: 100%;
+		height: 50px;
+	}
+	.search_form_content > div:not(:last-child)
+	{
+		border-right: none;
+		border-bottom: solid 1px #d1d1d1;
+	}
+	.search_form_button
+	{
+		position: absolute;
+		bottom: -80px;
+		left: -10px;
+		height: 40px;
+		width: calc(100% + 20px);
+	}
+	.testimonial_col:not(:last-child)
+	{
+		margin-bottom: 60px;
+	}
+	.newsletter_form_container
+	{
+		margin-left: 0;
+		margin-top: 50px;
+	}
+	.newsletter_button
+	{
+		width: 173px;
+		height: 52px;
+		font-size: 12px;
+	}
+	.newsletter_input
+	{
+		height: 52px;
+	}
+	.footer_col:not(:last-child)
+	{
+		margin-bottom: 0px;
+	}
+	.footer_nav
+	{
+		display: none;
+	}
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+	
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+	.header {background:#fff;}
+	.home {height: 220vh;}
+	.hamburger {
+    	display: block;
+    	position: absolute;
+    	top: 38px;
+    	right: 0;
+	}
+	.city
+	{
+		width: 100%;
+	}
+	.recent_slider_nav_container
+	{
+		display: none;
+	}
+
+	.slide_container {
+		width: 100%;
+		top: 16%;
+	}
+	.register-form {
+	    top: 4.2%;
+	    width: 90%;
+	    right: 0;
+	    left: 32px;
+	}
+	.contain-img {height: auto !important;}
+	.life-content {padding: 30px 30px;}
+	.space-bottom {margin-bottom: 20px;}
+	.amenities img {
+	    width: 100%;
+	    margin: 20px 20px;
+	    padding-right: 40px;
+	    height: 200px !important;
+	}
+	.project-model {padding: 45px 0;}
+	.footer_about {margin-bottom: 35px; text-align: justify;}
+	.footer_latest {padding: 0;}
+	.mobile-text {margin: 10px 0; font-size: 14px;}
+	.footer .maha-logo {display: block; margin: auto;}
+	.life-content {padding: 30px 25px;}
+	.menu {
+		width: 100%;
+		height: auto;
+		background: #fff;
+		top: 98px;
+	}
+	.menu.trans_500 ul.mobile-menu {margin: 0; padding: 15px 15px;}
+	.menu.trans_500 ul.mobile-menu li {text-align: left; padding: 10px 0;}
+	.menu.trans_500 ul.mobile-menu li a {color: #000;}
+	.hamburger i {color: #000;}
+	.home_title {margin: 0;}
+	.life-convenient, .life-convenient.hands, .life-convenient.women {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.life-convenient h3 {font-size: 18px; font-weight: 600; margin-bottom: 10px;}
+	.life-convenient h2 {line-height: 1.4 !important;}
+	.life-convenient p {font-size: 14px;}
+	#life-nature-carousel {height: 450px;}
+	#life-nature-carousel .owl-nav {top: 40%;}
+	.life-content.white {padding: 30px 25px;}
+	.amenities .life-content {padding: 30px 25px;}
+	.group-partners {margin-bottom: 40px;}
+	.footer img.logo-res {margin-right: 30px;}
+	.footer img.maha-logo {margin-right: 10px;}
+	.amenities img {margin: 20px 0; padding: 0;}
+	.amenities ul {margin-left: 25px;}
+	#about {padding: 70px 0;}
+	#features {padding: 70px 0;}
+	.project-model {padding: 100px 0 50px 0;}
+	.floor-plans {padding: 100px 0 50px 0;}
+	.about .abt-content {padding: 0;}
+	.video-section p {margin: 20px 0;}
+	.about-forest h2 {line-height: 1;}
+	.add-features .feature-content {padding: 30px 20px;}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	.logo
+	{
+		width: 110px !important;
+	}
+	.header_content
+	{
+		height: 60px;
+	}
+	.menu_close_container
+	{
+		top: 28px;
+		right: 28px;
+	}
+	.menu_item a
+	{
+		font-size: 18px;
+	}
+	.menu_phone
+	{
+		font-size: 11px;
+	}
+	.button
+	{
+		width: 153px;
+		height: 52px;
+	}
+	.button a
+	{
+		font-size: 12px;
+		line-height: 52px;
+	}
+	.home_subtitle
+	{
+		font-size: 12px;
+	}
+	.home_title
+	{
+		font-size: 24px;
+	}
+	.home_price
+	{
+		font-size: 18px;
+	}
+	.search_form_button
+	{
+		font-size: 12px;
+	}
+	.city_title
+	{
+		font-size: 24px;
+	}
+	.city_subtitle
+	{
+		font-size: 14px;
+	}
+	.newsletter_title
+	{
+		font-size: 24px;
+	}
+	.footer_phone,
+	.cr
+	{
+		font-size: 12px;
+	}
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	.footer_phone
+	{
+		display: none;
+	}
+	.hamburger {
+		top: 18px;
+    	right: 34px;
+	}
+	.register-form {width: 95%; top: 2.4%; left: 8px;}
+	.home {height: 100vh;}
+	.menu {top: 55px;}
+	#life-nature-carousel {height: 250px;}
+	#life-nature-carousel .owl-nav {top: 35%;}
+	.slide_container {top: 12%;}
+	.amenities ul {margin-bottom: 0;}
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+	
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="EstateApp">
+<head>
+<title>Shivam Heights | Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--<link href="img/logos/logo-shortcut.png" rel="shortcut icon" />-->
+
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/font-awesome.css" rel="stylesheet" />
+<link href="css/icomoon.css" rel="stylesheet" />
+<link href="css/swiper.min.css" rel="stylesheet" />
+<link href="css/animate.css" rel="stylesheet" />
+<link href="css/owl.carousel.css" rel="stylesheet" />
+<link href="css/slick.css" rel="stylesheet" />
+<link href="css/particles.css" rel="stylesheet" />
+<link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+<link href="css/default.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,800,900" rel="stylesheet" />
+
+<!-- Angular JS -->
+<script src="js/angular.min.js"></script>
+<script src="js/RealEstateTabledata.js"></script>
+<!-- End Angular JS -->
+</head>
+
+<body>
+<header>
+	<nav class="navbar navbar-custom navbar-default" data-offset-top="20" data-spy="affix">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header navbar-header-custom">
+					<button aria-expanded="false" class="collapsed menu-icon navbar-toggle"data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
+					</button> 
+					<a href="http://mypropguru.com/sh" class="navbar-logo">
+						<!--<img alt="logo" src="img/logos/logo.png" alt="Logo" />-->
+						<h2>Shivam Heights</h2>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse"id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-links-custom navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#speci-amenities">Specifications</a></li>
+						<li><a href="#area-desc">Area</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#home">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<div class="swiper-container" id="home">
+	<div class="swiper-wrapper">
+		<div class="slide-item swiper-slide" style="background-image:url(img/bg/Main_bg.jpg)">
+			<div class="overlay"></div>
+			<div class="">
+				<div class="row">
+					<div class="center-holder col-xs-12 col-sm-6 col-md-8 col-lg-7">
+						<div class="slider-content">
+							<div class="center-holder pre-title-center" data-swiper-parallax="-1500">Modern Houses</div>
+							<div class="title-center" data-swiper-parallax="-1500" data-swiper-opacity="5">Shivam Heights<br><span class="tagline"><b>We Transform <br> Architectural Marvel into Reality</b></span></div>
+							<div class="text-center" data-swiper-parallax="-800">
+								<div class="main_label">1 BHK & 2 BHK</div>
+								<p class="price">Starting at Rs. 30 Lakhs /-* onwards</p>
+							</div>
+						</div>
+					</div>
+					<div class="center-holder col-xs-12 col-sm-6 col-md-4 col-lg-4 col-lg-offset-1">
+						<div class="register-form">
+							<div class="form-title">
+								<h3>Register For Free!</h3>
+							</div>
+							<form class="register-property" name="register-form" id="register-property" action="http://crmdemo-env-1.ap-south-1.elasticbeanstalk.com/">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="form-group">
+											<input type="text" id="fname" name="fname" class="form-control" placeholder="Name*" required data-parsley-pattern="^[a-zA-Z\s]+$" data-parsley-trigger="keyup" onchange="manage(this)" />
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="form-group">
+											<input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No*" maxlength="10" required pattern="[6|7|8|9][0-9]{9}" data-parsley-length="[10, 10]" data-parsley-trigger="keyup" onchange="manage(this)" onkeypress="return isNumber(event)" />
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="form-group">
+											<input type="text" id="mail" name="mail" class="form-control" placeholder="Email ID*" required data-parsley-type="email" data-parsley-trigger="keyup" onchange="manage(this)" />
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+										<div class="form-group">
+											<input type="text" id="city" name="city" class="form-control" placeholder="City*" required data-parsley-trigger="keyup" onchange="manage(this)" />
+										</div>				    
+									</div>				
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							        	<input type="hidden" id="fname" name="company" value="ShivamHeights" />
+										<input type="hidden" id="fname" name="campaign" value="SH" />
+
+										<input type="hidden" name="source" id="source" value="FB" />
+							        	<input type="hidden" name="medium" id="medium" value="FB_Forms" />
+
+										<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success"  disabled />
+										<!-- onclick="window.location.href='http://mypropguru.com/sh/Thankyou.php';" -->
+									</div>												
+								</div>
+							</form>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="swiper-pagination swiper-pagination-white"></div>
+	<div class="swiper-button-white swiper-button-next"></div>
+	<div class="swiper-button-white swiper-button-prev"></div>
+</div>
+
+<div class="section-block-bg" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-sm-7">
+				<div class="section-heading">
+					<h2 class="animated fadeInLeft wow">About Us</h2>
+					<h3>Welcome to Shivam Heights!<br><span class="about-tag"><b>Affordable Homes For Your Family</b></span></h3>
+				</div>
+				<div class="text-content">
+					<p>Characterized by a unique combination of global knowledge and experience, we the team of Shivrudra Builders and Developers have come up with a brand new project called Shivam Heights.</p>
+					<p>Our USP is our location. Situated in one of the prime and fast developing locations of pune, this location is easily accessible from across the city. To keep our team’s skill set constantly updated, we keeping on exposing ourselves to intensive programmes cutting edge technologies and tools. Our industry certified consultants and advisors bring a vast array of skills to our ongoing effort to provide best in class solutions for our clients.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-offset-1 col-sm-5 col-md-5">
+				<div class="outline-bordered-right">
+					<img class="img-responsive" src="img/bg/Main_bg.jpg" alt="Shivam Heights" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="text-content">
+					<p>Our main motto is to convert an architectural marvel into a grand place of living at a cost you love. We care for the overall welfare of the society because investing with us is a wealth tomorrow. Our industry certified consultants and advisors bring a vast array of skills to our ongoing effort to provide best in class solutions for our clients. We have gone to great lengths to identify and recruit the qualified professionals with the skills and experience needed to ensure that our current destinations and future projects remain effectively managed.</p>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-block" id="speci-amenities">
+	<div style="height:1500px" id="particles-js"></div>
+	<div class="container">
+		<div class="row project-row" data-scrollax-parent="true">
+			<div class="col-xs-12 col-sm-7 col-md-7" data-scrollax="properties: { 'translateY': '-50px', 'opacity': 0.1 }">
+				<div class="outline-bordered-left">
+					<img src="img/bg/Main_bg.jpg" alt="Shivam Heights" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4 col-md-offset-1 col-sm-12" data-scrollax="properties: { 'translateY': '100px', 'opacity': 0 }">
+				<div class=project-title>
+					<h3>01</h3>
+					<h2>Specifications</h2>
+				</div>
+				<div class="mt-30 text-content">
+					<ul>
+						<li>Earthquake Resistent RCC Frame Structure</li>
+						<li>External Walls 6" Thick Brickwork, Internal Walls 4" Thick Brickwork</li>
+						<li>Sand-Faced Cement Plaster for External Walls</li>
+						<li>Powder Coasted Alluminium Sliding Windows</li>
+						<li>Safety Grills for Windows</li>
+						<li>Internal Oil Bound Distemper & External Acryllic Emulsion Paint</li>
+						<li>24" x 24" Size Vetrified Tiles with 3" Skirting</li>
+						<li>Designer dado tiles uptio 7 ft. in bath & glazed tiles dado upto 4 ft. in W.C.</li>
+						<li>Anti-skid tiles in terrace & bathroom</li>
+						<li>8 ft. long Black Granite Top Kitchen Platform with S.S Sink</li>
+						<li>Glazed tiles dado upto 2 ft. & provision of exhaust fan in Kitchen.</li>
+						<li>Concealed Plumbing & Wiring (ISI Mark)</li>
+						<li>Flush Doors with Lamination with C.P. Fittings & M.S. Frames</li>
+						<li>Telephone & TV Points in Living Room</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row project-row mt-100" data-scrollax-parent=true>
+			<div class="col-xs-12 col-sm-6 col-md-6" data-scrollax="properties: { 'translateY': '100px', 'opacity': 0.2 }">
+				<div class="project-title">
+					<h3>02</h3>
+					<h2>Amenities</h2>
+				</div>
+				<div class="mt-30 text-content">
+					<ul>
+						<li>Decorative Entrance Lobby</li>
+						<li>Letter Box & Name Board At Entrance</li>
+						<li>Vastu Compliant</li>
+						<li>Covered Car Parking For Each Flat</li>
+						<li>Seperate borewell For Additional Water Supply</li>
+						<li>M.S. Railing in Terrace & Staircase</li>
+						<li>Overhead & U.G. Water Tank</li>
+						<li>Lift with Power Back-Up</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6" data-scrollax="properties: { 'translateY': '-50px', 'opacity': 0 }">
+				<div class="outline-bordered-right">
+					<img src="img/bg/Main_bg.jpg" alt="Shivam Heights" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-block-parallax" style="background: #222;" id="area-desc">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="section-heading mt-70 outline-bordered-text-right white-color">
+					<h3>Area Statement</h3>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-8 col-sm-12">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="countup-box">
+							<div class="table-responsive" ng-controller="FlatArea">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Sr. No</th>
+											<th></th>
+											<th>Flat</th>
+											<th>Carpet Area</th>
+											<th>B/Up Area</th>
+											<th>Terrace</th>
+											<th>Total</th>
+										</tr>
+									</thead>
+									<tbody ng-repeat="flat in flatarea">
+										<tr>
+											<td>{{flat.SrNo}}</td>
+											<td>{{flat.Floor}}</td>
+											<td>{{flat.Flat}}</td>
+											<td>{{flat.CarpetArea}}</td>
+											<td>{{flat.BupArea}}</td>
+											<td>{{flat.Terrace}}</td>
+											<td>{{flat.Total}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section-block" id="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<div class="section-heading">
+					<h2 class="animated fadeInLeft wow">Floor Plans</h2>
+					<h3>Flat Floor Plans</h3>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-9">
+				<div id="floor-plans" class="owl-carousel">
+					<div class="property-image">
+						<a href="img/First-Floor-Plan_1.jpg" data-fancybox data-caption="First Floor Plan"><img class="img-responsive" src="img/First-Floor-Plan_1.jpg" alt="Floor Plan First Floor 1" /></a>
+					</div>
+					<div class="property-image">
+						<a href="img/Second-Floor-Plan_2.jpg" data-fancybox data-caption="Second Floor Plan"><img class="img-responsive" src="img/Second-Floor-Plan_2.jpg" alt="Floor Plan Second Floor 2" /></a>
+					</div>
+					<div class="property-image">
+						<a href="img/Third-Floor-Plan_3.jpg" data-fancybox data-caption="Third Floor Plan"><img class="img-responsive" src="img/Third-Floor-Plan_3.jpg" alt="Floor Plan Third Floor 3" /></a>
+					</div>
+					<div class="property-image">
+						<a href="img/Parking-Floor-Plan_4.jpg" data-fancybox data-caption="Parking Floor Plan"><img class="img-responsive" src="img/Parking-Floor-Plan_4.jpg" alt="Floor Plan Parking Floor 4" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div style="height:150px" id="particles-js-footer"></div>
+	<div class="container">
+		<div class="row">			
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="footer-title">
+					<h2>Site Address</h2>
+				</div>
+				<p>CTS No. 3808, S.No. 16, Gulve Wasti, Bhosari, <br> Pune - 411 026.</p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="footer-title">
+					<h2>Head Office</h2>
+					<p>Office : 202, Mayuri Heavens, Kaspate Wasti, Wakad, Pune - 411 026.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="footer-title">
+					<h2>Maharera No.:</h2>
+				</div>
+				<div class="maharera-icon">
+					<img class="img-responsive" src="img/maharera.png" alt="Maharera" />
+				</div>
+				<p class="rera-no">P52100017721</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+				<p>© Copyright 2017 SpecThemes. All Rights reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<a href="#" class="scroll-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.hover3d.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/scrollax.js"></script>
+<script src="js/slick-plugin.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/map.js"></script>
+<script src="js/main.js"></script>
+
+<script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+<script type="text/javascript">
+    $("#floor-plans").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+            	items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script><!-- End Custom Javascript -->
+
+<!--validation script start -->
+<script>  
+$(document).ready(function(){  
+    $('#register-property').parsley();
+ 
+ $('#register-property').on('submit', function(event){
+  event.preventDefault();
+  if($('#register-property').parsley().isValid())
+  {
+   $.ajax({
+    url:"http://crmdemo-env-1.ap-south-1.elasticbeanstalk.com/",
+    method:"POST",
+    data:$(this).serialize(),
+    beforeSend:function(){
+     $('#submit').attr('disabled','disabled');
+     $('#submit').val('Submitting...');
+    },
+    success:function(data)
+    {
+     $('#register-property')[0].reset();
+     $('#register-property').parsley().reset();
+     $('#submit').attr('disabled',false);
+     $('#submit').val('Submit');
+     alert(data);
+    }
+   });
+  }
+ });
+});  
+</script><!--validation script End -->
+
+<script type="text/javascript">
+	$('.navbar ul li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });
+     $(".navbar ul li a").click(function(){
+        $(".navbar-collapse").toggleClass("in");
+    });
+</script>
+
+<script>
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+        
+        // LOOP THROUGH EACH ELEMENT.
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].type == 'text' && ele[i].value == '' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }    
+</script>
+<script>
+    var fname = document.getElementById("fname");
+
+    var invalidChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    fname.addEventListener("keydown", function(e) {
+      if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+      }
+    });
+</script>
+<script>
+	function isNumber(evt) {
+		evt = (evt) ? evt : window.event;
+	    var charCode = (evt.which) ? evt.which : evt.keyCode;
+	    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	    	return false;
+	    }
+	    return true;
+	}
+</script>
+</body>
+</html>

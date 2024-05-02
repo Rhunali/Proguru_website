@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Shree Vallabh</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css" />
+<link rel="stylesheet" type="text/css" href="styles/animate.css" />
+<link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+</head>
+<body>
+
+<div class="super_container">
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header_content">
+					<div class="row">
+						<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="logo">
+								<a href="index.html"><img src="images/logo.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-2 col-md-3 col-lg-4"></div>
+						<div class="col-xs-12 col-sm-7 col-md-6 col-lg-5">
+							<nav class="main_nav">
+								<ul>
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#about">About us</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+			<ul class="mobile-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About us</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home" id="home">
+
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div id="header-carousel" class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/CLUB_Cam10_revised_66SA.jpg)"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">A Good Life with a Good Home</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<span>1 Room Kitchen (1 RK)</span>
+												</li>
+												<li>
+													<span>1 BHK</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">Rs. 10,00,000 onwards</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/Gate_01_P.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_subtitle">super offer</div>
+										<div class="home_title">A Good Life with a Good Home</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li>
+													<span>1 Room Kitchen (1 RK)</span>
+												</li>
+												<li>
+													<span>1 BHK</span>
+												</li>
+											</ul>
+										</div>
+										<div class="home_price">Rs. 10,00,000 onwards</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<div class="register-form">
+		<div class="form-title">
+			<h3>Register For Free!</h3>
+		</div>
+		<form class="register-property" name="register-form" id="register-property" action="http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="fname" name="fname" class="form-control" placeholder="Name*" required data-parsley-pattern="^[a-zA-Z\s]+$" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No*" maxlength="10" required pattern="[6|7|8|9][0-9]{9}" data-parsley-length="[10, 10]" data-parsley-trigger="keyup" onchange="manage(this)" onkeypress="return isNumber(event)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="mail" name="mail" class="form-control" placeholder="Email ID*" required data-parsley-type="email" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="city" name="city" class="form-control" placeholder="City*" required data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>				    
+				</div>				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		        	<input type="hidden" id="fname" name="company" value="Shree Vallabh" />
+					<input type="hidden" id="fname" name="campaign" value="SVA" />
+
+					<input type="hidden" name="source" id="source" value="FB" />
+		        	<input type="hidden" name="medium" id="medium" value="FB_Forms" />
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success"  disabled />
+					<!-- onclick="window.location.href='http://sirsonite.com/ShreeVallabhAangan/Thankyou.php';" -->
+				</div>												
+			</div>
+		</form>
+	</div>
+
+	<!-- About -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Let's celebrate Life!</h1>
+					<p>The word 'life' has a many vibrant meanings to it. For an average people, it means living life to achieve more happiness – be it, moving up in life or buying a home of their own among other things. For them life is about hope, inspiration, positive attitude and more.</p><br>
+
+					<p>At Shree Vallabh Aangan, 1RK & 1BHK homes, we have considered three aspects of nature, budget and location. These aspects are bound to offer you a lifetime peace of mind.</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- End About -->
+
+	<!-- Life in Nature -->
+	<div class="life-in-nature" id="life-in-nature">
+		<div class="row no-gutters">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="innovative-title">
+					<h3>Life in Nature!</h3>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="life-content">
+					<p>Nature connected to life refreshes our senses. At Shree Vallabh Aangan, 1RK & 1BHK homes, you will find Karjat abundance in nature.<br><br>
+					You will appreciate the beautiful nature and airy space specially created for you. It is a space that presents you with picturesque locale and a natural setting of hills.<br><br>
+					We have worked out minute details that shall make your life all the more inspiring. Be surprised by the well-planned, attention-to-detail flat, beautifully elegant and thoughtful.<br><br>
+					Plenty of space, feel-good amenities – that serve all your needs enhance the joy of living. In fact, we have used A-1 grade material that provides a life-long assurance. Quality construction, strategic location, nice connectivity shall certainly thrill you.</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="contain-img" style="height: 550px;">
+					<img class="img-responsive" src="images/Couple.jpg" />
+				</div>
+			</div>
+		</div>
+	</div><!-- End Life in Nature -->
+
+	<div class="life-convenient" id="life-convenient">
+		<div class="row no-gutters">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="innovative-title">
+					<h3>Life Convenient!</h3>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="contain-img" style="height: 450px;">
+					<img class="img-responsive" src="images/HappyMode.jpg" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div class="life-content">
+					<p>We have placed the word 'convenience' in a different perspective. At Shree Vallabh Aangan, 1RK & 1BHK homes, Karjat, you will understand its true essence. The location is convenient along with the budget which is affordable. It is merely a 15-minute drive from station and 45-minutes from the planned international airport of Panvel.<br><br>
+					Shree Vallabh Aangan offers a triple advantage of Greater Mumbai, Panvel and Neral triangle. Neral is located half an-hour from Karjat. In addition – it is connected by railway and roadway.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="amenities" id="amenities">
+		<div class="row no-gutters">
+			<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+				<div class="life-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h3>Amenities</h3>
+							<ul class="space-bottom">
+								<li>Decorated main entrance MS Gate</li>
+								<li>Elegant entrance lobby</li>
+								<li>Rainwater harvesting system</li>
+								<li>Club house and Society office</li>
+								<li>24-hour generator back-up for lift & common areas</li>
+								<li>Intercom facility</li>
+								<li>CCTV in common Area</li>
+								<li>Provision for geyser or solar hot water</li>
+								<li>Bore-well water facility</li>
+								<li>Decorative landscape garden</li>
+								<li>Designer paver blocks in compound area</li>
+								<li>Children's play park with modern play equipment</li>
+								<li>Solar light system for streetlights and garden</li>
+								<li>Streetlights in common areas</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+							<h3>Speciﬁcations</h3>
+							<ul>
+								<li>RCC framed structure with earthquake resistant design</li>
+								<li>Elevators of reputed make</li>
+								<li>Vitrified flooring in living room, bedroom & kitchen with skirting</li>
+								<li>Granite cooking platform with SS sink in kitchen with ceramic dado tiles above kitchen platform</li>
+								<li>Anti-skid flooring in balcony, bathroom & WC with elegant ceramic dado tiles</li>
+								<li>Concealed plumbing with quality sanitary ware & CP fittings</li>
+								<li>Concealed copper wiring with modular-type switches</li>
+								<li>Paints: Oil-bound distemper paint for interior walls & good quality acrylic paint exteriors walls</li>
+								<li>Provision for cable TV & telephone connection</li>
+								<li>Geyser point in bathroom</li>
+								<li>Anodized aluminum sliding windows</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<img class="img-responsive" src="images/BuildingPassage.jpg" />
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<img class="img-responsive" src="images/Kitchen.jpg" style="height: 360px;" />
+					</div>			
+				</div>				
+			</div>
+		</div>
+	</div>	
+
+	<!-- Project Carousel -->
+	<div class="project-model" id="gallery">
+		<div class="regular-title">
+			<h2>Property Overview</h2>
+		</div>		
+		<div id="property-carousel" class="owl-carousel">
+			<div class="property-image">
+				<a href="images/Bird_2000.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/Bird_2000.jpg" alt="Property 1" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Landscape_02_club_2000.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/Landscape_02_club_2000.jpg" alt="Property 2" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/child_02_club_P.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/child_02_club_P.jpg" alt="Property 3" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/path_01_p_-_Copy.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/path_01_p_-_Copy.jpg" alt="Property 4" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/REV_1RK.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/REV_1RK.jpg" alt="Property 5" /></a>
+			</div>		
+			<div class="property-image">
+				<a href="images/REV_1RK_revised.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/REV_1RK_revised.jpg" alt="Property 6" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/REV2_BHK.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/REV2_BHK.jpg" alt="Property 7" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/REV2_BHK_Final.jpg" data-fancybox data-caption="Caption for single image"><img class="img-responsive" src="images/REV2_BHK_Final.jpg" alt="Property 8" /></a>
+			</div>			
+		</div>
+	</div> <!-- End Project Carousel -->
+
+	<div class="floor-plans">
+		<div class="regular-title">
+			<h2>Floor Plans</h2>
+		</div>
+
+		<div id="floor-plan-carousel" class="owl-carousel">
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan1.jpg" data-fancybox data-caption="Wing A, B, D, F & G - 1st & 3rd Floor Plan" rel="gallery01"><img class="img-responsive" src="images/FloorPlans/FloorPlan1.jpg" alt="Floor Plan 1" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan2.jpg" data-fancybox data-caption="Wing A, B, D, F & G - 2nd & 4th Floor Plan" rel="gallery02"><img class="img-responsive" src="images/FloorPlans/FloorPlan2.jpg" alt="Floor Plan 2" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan3.jpg" data-fancybox data-caption="Wing C & H - 1st & 3rd Floor Plan" rel="gallery03"><img class="img-responsive" src="images/FloorPlans/FloorPlan3.jpg" alt="Floor Plan 3" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan4.jpg" data-fancybox data-caption="Wing C & H - 2nd & 4th Floor Plan" rel="gallery04"><img class="img-responsive" src="images/FloorPlans/FloorPlan4.jpg" alt="Floor Plan 4" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan5.jpg" data-fancybox data-caption="Wing E - 1st & 3rd Floor Plan Floor Plan" rel="gallery05"><img class="img-responsive" src="images/FloorPlans/FloorPlan5.jpg" alt="Floor Plan 5" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a class="fancybox" href="images/FloorPlans/FloorPlan6.jpg" data-fancybox data-caption="Wing E - 2nd & 4th Floor Plan" rel="gallery06"><img class="img-responsive" src="images/FloorPlans/FloorPlan6.jpg" alt="Floor Plan 6" /></a>
+			</div>															
+		</div>
+	</div>
+
+	<div class="site-location">
+		<div class="google-map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.100835751388!2d73.31864473993157!3d18.926930341806685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7fb093e3b8c01%3A0x2f9e13e786787e03!2sShree+SaiKrupa+Shelke+Bandhu+Mangal+Karyalay!5e0!3m2!1sen!2sin!4v1564145463962!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer" id="contact">
+		<div class="footer_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Site Address</h4><br>
+								<p>Survey No. 77/2, Village Devulwadi, Taluka: Karjat, Dist.: Raigad Opp. Shelke Mangal Karyalay, Karjat-Neral Road, Karjat - 410201</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Head Office</h4><br>
+								<p>303/304, Gulmohar Complex, Opp. Anupam Cinema, Goregaon (East), Mumbai - 400063.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="footer_latest loans-available">
+							<p>Home Loans available by:</p>
+							<ul class="bank-list">
+								<li><a href="https://www.icicibank.com/Personal-Banking/loans/home-loan/index.page" target="_blank"><img class="img-responsive" src="images/ICICI_Bank.jpg" style="height: 68px;"></a></li>
+								<li><a href="https://www.hdfcbank.com/personal/products/loans/home-loan" target="_blank"><img class="img-responsive" src="images/HDFC_Bank.jpg"></a></li>
+								<li><a href="https://www.indiabullshomeloans.com/home-loan" target="_blank"><img class="img-responsive" src="images/IndiaBulls_Bank.jpg" style="height: 68px;"></a></li>
+							</ul><br>
+							<p class="mobile-text-center" style="margin: 10px 0; font-size: 14px;">MAHA RERA NO. P52000003436</p>
+							<a href="https://maharera.mahaonline.gov.in/" target="_blank"><img class="img-responsive maha-logo" src="images/maharera.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+		<div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="footer_bar_content">
+							<div class="cr text-center">©Copyrights 2019 &nbsp;|&nbsp; All Rights Reserved.
+							</div>
+						</div>
+					</div>
+					<!--<div class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+						<div class="footer_nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+					</div>-->
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+<!--validation script start -->
+<script>  
+$(document).ready(function(){  
+    $('#register-property').parsley();
+ 
+ $('#register-property').on('submit', function(event){
+  event.preventDefault();
+  if($('#register-property').parsley().isValid())
+  {
+   $.ajax({
+    url:"http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet",
+    method:"POST",
+    data:$(this).serialize(),
+    beforeSend:function(){
+     $('#submit').attr('disabled','disabled');
+     $('#submit').val('Submitting...');
+    },
+    success:function(data)
+    {
+     $('#register-property')[0].reset();
+     $('#register-property').parsley().reset();
+     $('#submit').attr('disabled',false);
+     $('#submit').val('Submit');
+     alert(data);
+    }
+   });
+  }
+ });
+});  
+</script><!--validation script End -->
+
+<script type="text/javascript">
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+        
+        // LOOP THROUGH EACH ELEMENT.
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].type == 'text' && ele[i].value == '' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }    
+</script>
+
+<script type="text/javascript">
+    var fname = document.getElementById("fname");
+
+    var invalidChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    fname.addEventListener("keydown", function(e) {
+      if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+      }
+    });
+</script>
+
+<script type="text/javascript">
+	function isNumber(event) {
+	   event = (event) ? event : window.event;
+	   var charCode = (event.which) ? event.which : event.keyCode;
+	   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	       return false;
+	   }
+	       return true;
+	}
+</script>
+
+<script type="text/javascript">
+    $("#header-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#property-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#floor-plan-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+	 $("a.fancybox").fancybox({
+        'transitionIn'  :   'elastic',
+        'transitionOut' :   'elastic',
+        'speedIn'   :   600, 
+        'speedOut'  :   200, 
+        'overlayShow'   :   false,
+        'cyclic'    :   true,
+        'showNavArrows' :   true
+    })
+
+	$("ul.mobile-menu li a").click(function (event) {
+        $(".menu.trans_500").toggleClass('active');
+    });
+</script>
+</body>
+</html>

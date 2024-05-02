@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Goldfield</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css" />
+<link rel="stylesheet" type="text/css" href="styles/animate.css" />
+<link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+</head>
+<body>
+<div class="super_container">
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header_content">
+					<div class="row">
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="logo">
+								<a href="http://mypropguru.com/GF"><img src="images/logo.png" alt="Logo"></a>
+							</div>
+						</div>
+						<div class="col-6 col-sm-9 col-md-12 col-lg-9">
+							<nav class="main_nav">
+								<ul>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#amenities">Amenities</a></li>
+									<li><a href="#gallery">Gallery</a></li>
+									<li><a href="#floor-plans">Floor Plans</a></li>
+									<li><a href="#home">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column">
+			<ul class="mobile-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#floor-plans">Floor Plans</a></li>
+				<li><a href="#home">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+	<div class="home" id="home">
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div id="header-carousel" class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/Goldfieldd_Top.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_title"><span class="tagline">Welcome to Royal Goldfieldd</div>								
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>										
+			</div>
+		</div>
+	</div>
+
+	<div class="register-form">
+		<div class="form-title">
+			<h3>Register For Free!</h3>
+		</div>
+		<form class="register-property" action="http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet" onsubmit="window.open('http://mypropguru.com/GF/Thankyou.php'); return true;" method="post">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="fname" name="fname" class="form-control" placeholder="Name*" required data-parsley-pattern="^[a-zA-Z\s]+$" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No*" maxlength="10" required pattern="[6|7|8|9][0-9]{9}" data-parsley-length="[10, 10]" data-parsley-trigger="keyup" onchange="manage(this)" onkeypress="return isNumber(event)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="mail" name="mail" class="form-control" placeholder="Email ID*" required data-parsley-type="email" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="city" name="city" class="form-control" placeholder="City*" required data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>				    
+				</div>				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		        	<input type="hidden" id="fname" name="company" value="Goldfield" />
+					<input type="hidden" id="fname" name="campaign" value="GF" />
+
+					<input type="hidden" name="source" id="source" value="FB" />
+		        	<input type="hidden" name="medium" id="medium" value="FB_Forms" />
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success"  disabled />
+					<!-- onclick="window.location.href='http://mypropguru.com/GF/Thankyou.php';" -->
+				</div>												
+			</div>
+		</form>
+	</div>
+
+	<!-- Life in Nature -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2 class="light-brown">Our Story</h2>
+				</div><br>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 text-center">
+					<div class="abt-content">
+						<p>India has been witness to a sporting revolution. The country is awakening to the fact that to be able to give rise to award-winning sportsmen, we need to recognise and tap talent from a very early age. A major challenge faced in our society is the lack of quality sports infrastructure.<br>
+						The objective of Royal Goldfieldd Club Resort is to provide world-class sports infrastructure. It is also our aim to encourage budding talent through sports camps, training academies and professional coaching. The Royal Goldfieldd Club Resort has been conceptualized on this principle foundation.<br>
+						We plan to bring back yesteryear's sports tradition of playing amidst nature, where families with children can enjoy an active lifestyle. Similarly, we look forward to giving corporates a refreshing spin by regularly organising sports tournaments and team-building activities, thus nurturing better carmaraderic.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 text-center">
+					<div class="contain-img space-bottom">
+						<img class="img-responsive" src="images/About_Img.jpg" alt="About" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<div class="abt-content">
+						<p>Whilst 'Sports for All' continues to be the nerve centre of our story, we will also enable an environment for outdoor adventure and create a leisure and lifestyle gateway near the sea and hills. This will be complimented through well-established club infrastructure and supported by world-class hospitality.<br>
+						We are all set to give a new definition to family holidays in the beautiful landscape of Konkan.</p>
+
+						<p class="abt-tagl"><i class="fa fa-quote-left"></i>&nbsp; The Royal Goldfieldd Club Resort has already developed an English county-style pavilion and cricket ground, which will be further augmented by state-of-the-art infrastructure that will come up in phases. &nbsp;<i class="fa fa-quote-right"></i></p>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- End Life in Nature -->
+
+	<div class="additional-features">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+				<div class="sunset">
+					<div class="overlay"></div>
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 text-center">
+							<h2>Dapoli</h2>
+							<h4>A Hat-Trick of Hills, Beaches & Forests</h4>
+							<p>Dapoli is located 800 ft. above sea-level in the scenic Sahyadris, along the peaceful Konkan shoreline. The Royal Goldfieldd Club Resort is a unique Sports, Leisure & Lifestyle-Centric Club & Resort in Dapoli. The development is spread over a vast table-land of over 40 acres, overlooking the Anjarle, Harne and Murud beaches. This popular holiday and tourist destination has been declared a "Mini-Goa" for its untouched 50 km shoreline of beautiful beaches, and a "Mini-Mahabaleshwar" for its pleasant weather all year round.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="general-info" id="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h2 class="dark-green">Design Partners</h2><br>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<div class="gnl-content">
+						<img class="img-responsive" src="images/ProjectMasterPlan.jpg" alt="Project Master Plan" />
+						<h3>Project Master Plan & Design - Shashi Prabhu & Associates</h3>
+						<ul>
+							<li>An illustrious name synonymous with sports architecture in India</li>
+							<li>The Renowned architect of the Wankhede Stadium at Mumbai, the MCA Club in BKC, and over 26 other sports complexes and clubhouses across india.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<div class="gnl-content">
+						<img class="img-responsive" src="images/Architecture_Design.jpg" alt="Architecture Design" />
+						<h3>Pavilion Architecture & Design - Swapnil Patil & Partners</h3>
+						<ul>
+							<li>A leading master planning, urban design and engineering firm in Pune</li>
+							<li>Winner of 3 HUDCO Awards.</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<div class="gnl-content">
+						<img class="img-responsive" src="images/Cricket_Ground.jpg" alt="Cricket Ground" />
+						<h3>80-Yard International Cricket Ground Curated by Mr. Sudhir Naik</h3>
+						<ul>
+							<li>Former indian test cricketer & one of the most senior ground curators in India</li>
+							<li>The esteemed curator of the Wankhede Stadium at Mumbai</li>
+							<li>Groundsman Mr. Rahul Khalate</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<div class="gnl-content">
+						<img class="img-responsive" src="images/ProjectContractor.jpg" alt="Project Contractor" />
+						<h3>Project Contractor - Vikas Constructors</h3>
+						<ul>
+							<li>Proprietors: Mr. Narsingh Rathod & Mr. Vikas Rathod</li>
+						</ul>
+					</div>
+				</div>				
+			</div>			
+		</div>
+	</div>
+
+	<div class="nearby">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2 class="light-brown">Nearby Attractions</h2><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/Dolphin.png" alt="Dolphin" />
+						<h4>Dolphin Safari</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/Cave.png" alt="Cave" />
+						<h4>Panhelkaji Caves</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/Fort.png" alt="Fort" />
+						<h4>Chitradurg Fort</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/WaterSport.png" alt="Water Sport" />
+						<h4>Water Sport</h4>
+					</div>
+				</div>												
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/Temple.png" alt="Temple" />
+						<h4>Shri Ganesh Temple, Anjarle</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/Beach.png" alt="Beach" />
+						<h4>Harne, Murud, Karde, Ladghar Beach</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/HotWaterSprings.png" alt="Hot Water Springs" />
+						<h4>Hot Water Springs</h4>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center">
+					<div class="nearby-feature">
+						<img class="img-responsive" src="images/UniversityCap.png" alt="University Cap" />
+						<h4>Dr. Balasaheb Sawant Konkan Krishi Vidhyapeeth</h4>
+					</div>
+				</div>												
+			</div>			
+		</div>
+	</div>
+
+	<div class="adtn-facilities">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-7 col-lg-8 col-xl-8">
+				<div class="fac-img">
+					<img class="img-responsive" src="images/CricketGround.jpg" alt="Cricket Ground" />
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-5 col-lg-4 col-xl-4">
+				<div class="adtn-cnt">
+					<h3 class="dark-green">Live, Play, Rejoice... We present to you the sporting life!</h3>
+					<p>Centered on an international-sized cricket ground along with the lines of classic English country pavilions, RGCR is poised as a getaway destination for sportspersons and sports enthusiasts alike.</p>
+					<h5>We shall have provisions for</h5>
+					<ul>
+						<li>State-Of-The-Art Sports Infrastructure</li>
+						<li>Professional Coaching</li>
+						<li>Student Camps</li>
+						<li>Hosting National/International Tournaments & Competitions</li>
+						<li>Hosting Corporate Tournaments</li>
+					</ul><br>
+					<p>Also designed as a vacation resort for holiday-seekers and nature-lovers, you will experience the finest in hospitality, leisure, wellness, recreation and entertainment for the whole family.</p>
+					<p>Fall in Love with Dapoli's sunshine, sea-breeze and fresh coastal cuisine, make this sports, leisure & lifestyle destination your second holiday home.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Amenities -->
+	<div class="amenities" id="amenities">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<div class="life-content">
+						<h2 class="dark-green">Amenities</h2>
+						<h3>Royal Goldfieldd Club Resort</h3>
+						<p>The neotraditional architecture of the county club, set against a picturesque backdrop of hills, evokes an old-world charm. The 2-storey English pavilion is composed of the Central Building and the Residential North & South Wings.</p><br><br>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Dining.png" alt="Dining" />
+									<h5>All Day Dining Cafe</h5>
+									<p>We offer breakfast, lunch and dinner at our exquisite all-day cafe which overlooks the cricket ground and surrounding hills.</p>
+								</div>								
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Nature&Leisure.png" alt="Nature & Leisure" />
+									<h5>Nature & Leisure</h5>
+									<p>Discover scenic hikes to historical forts. Delight in long walks or cycle-rides along nature trails. Watch picturesque sunsets by the beach together.</p>
+								</div>								
+							</div>	
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Billiards.png" alt="Billiards" />
+									<h5>Table-Tennis, Billiards & Dart Room</h5>
+									<p>Give a tough time to your opponents or play a leisurely game with your mates.</p>
+								</div>								
+							</div>							
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/SteamRoom.png" alt="Steam Room" />
+									<h5>Steam Room</h5>
+									<p>Unwind post sports or a workout and treat yourself to a healing steam.</p>
+								</div>								
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/MultipurposeHalls.png" alt="Multipurpose Halls" />
+									<h5>Multipurpose Halls</h5>
+									<p>Spacious halls for banquets, functions, celebrations or team parties and meets.</p>
+								</div>								
+							</div>														
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Luxury.png" alt="Luxury" />
+									<h5>24 Luxury Guest Rooms</h5>
+									<p>The North & South Wings of the pavilion accommodate 24 luxury guest rooms with balconies overlooking the vast cricket ground and rolling hills.</p>
+								</div>								
+							</div>							
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/SportsStadium.png" alt="Sports Stadium" />
+									<h5>Sports for All</h5>
+									<p>Give beginner lessons to the youngest ones in the family or have your older kids challenge you in every sport. Enjoy live-action, high-octane games from the seats.</p>
+								</div>								
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Restaurant.png" alt="Restaurant" />
+									<h5>Air-Conditioned Restaurant & Bar</h5>
+									<p>Sip on your favorite malts, beers and cocktails while enjoying an uninterrupted view of the cricket game in action. Savour an immaculate culinary experience at our fine-dining restaurant.</p>
+								</div>								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/BusinessCentre.png" alt="Business Centre" />
+									<h5>Business Centre & Conference Rooms</h5>
+									<p>Refresh your work-perspective with sports & team-building activities on business retreats. The conference rooms are ideal for corporate meetings and management training.</p>
+								</div>								
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<img class="img-responsive" src="images/Cricket.png" alt="Cricket" />
+									<h5>Cricket Ground</h5>
+									<p>Adjoining the pavilion is an 80-yard international cricket ground with 7 wickets.</p>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<div class="life-content">
+						<h3>Proposed Future Development Plans</h3><br>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<h5>Outdoor Sports</h5>
+									<p>Apart from cricket, more outdoor sports infrastructure will be added.</p>
+								</div>
+							</div>	
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<h5>Indoor Sports</h5>
+									<p>Apart from cricket, more outdoor sports infrastructure will be added.</p>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<h5>Tennis</h5>
+									<p>Apart from cricket, more outdoor sports infrastructure will be added.</p>
+								</div>
+							</div>	
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<h5>Indoor Cricket</h5>
+									<p>Apart from cricket, more outdoor sports infrastructure will be added.</p>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<h5>Football</h5>
+									<p>Apart from cricket, more outdoor sports infrastructure will be added.</p>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="amenity-box">
+									<ul>
+										<li>Swimming</li>
+										<li>Badminton</li>
+										<li>Squash</li>
+										<li>Volleyball & Basketball</li>
+									</ul>
+								</div>
+							</div>									
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+								<div class="amenity-img">
+									<img class="img-responsive" src="images/TennisCourt.jpg" alt="Tennis Court" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+								<div class="amenity-img">
+									<img class="img-responsive" src="images/CricketRoom.jpg" alt="Cricket Room" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+								<div class="amenity-img">
+									<img class="img-responsive" src="images/Football.jpg" alt="Football" />
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+								<div class="amenity-img">
+									<img class="img-responsive" src="images/Badminton.jpg" alt="Badminton" />
+								</div>
+							</div>							
+						</div>															
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Amenities -->	
+
+	<!-- Project Carousel -->
+	<div class="project-model" id="gallery">
+		<div class="regular-title">
+			<h2>Property Overview</h2>
+		</div>		
+		<div id="property-carousel" class="owl-carousel">
+			<div class="property-image">
+				<a href="images/Gallery/Bar-Desk.jpg" data-fancybox data-caption="Bar Desk"><img class="img-responsive" src="images/Gallery/Bar-Desk.jpg" alt="Bar Desk" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Celebration-Dinings.jpg" data-fancybox data-caption="Celebration Dinings"><img class="img-responsive" src="images/Gallery/Celebration-Dinings.jpg" alt="Celebration Dinings" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Hall.jpg" data-fancybox data-caption="Hall"><img class="img-responsive" src="images/Gallery/Hall.jpg" alt="Hall" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/Gallery/Hall1.jpg" data-fancybox data-caption="Hall 1"><img class="img-responsive" src="images/Gallery/Hall1.jpg" alt="Hall 1" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Royal-Cabin.jpg" data-fancybox data-caption="Royal Cabin"><img class="img-responsive" src="images/Gallery/Royal-Cabin.jpg" alt="Royal Cabin" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/ClubGround.jpg" data-fancybox data-caption="Club Ground"><img class="img-responsive" src="images/Gallery/ClubGround.jpg" alt="Club Ground" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Gymnasium.jpg" data-fancybox data-caption="Gymnasium"><img class="img-responsive" src="images/Gallery/Gymnasium.jpg" alt="Gymnasium" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Bedroom.jpg" data-fancybox data-caption="Bedroom"><img class="img-responsive" src="images/Gallery/Bedroom.jpg" alt="Bedroom" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/ConferenceRoom.jpg" data-fancybox data-caption="Conference Room"><img class="img-responsive" src="images/Gallery/ConferenceRoom.jpg" alt="Conference Room" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/HotelRoom.jpg" data-fancybox data-caption="Hotel Room"><img class="img-responsive" src="images/Gallery/HotelRoom.jpg" alt="Hotel Room" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/PlayersRoom.jpg" data-fancybox data-caption="Players Room"><img class="img-responsive" src="images/Gallery/PlayersRoom.jpg" alt="Players Room" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/MeetingHall.jpg" data-fancybox data-caption="Meeting Hall"><img class="img-responsive" src="images/Gallery/MeetingHall.jpg" alt="Meeting Hall" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/GoldfielddGroundTop.jpg" data-fancybox data-caption="Goldfieldd Ground Top"><img class="img-responsive" src="images/Gallery/GoldfielddGroundTop.jpg" alt="Goldfieldd Ground Top" /></a>
+			</div>						
+		</div>
+	</div> <!-- End Project Carousel -->
+
+	<!-- Footer -->
+	<footer class="footer" id="contact">
+		<div class="footer_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Site Address</h4>
+								<p>S. No. 24, Village Waghve, Tal. Dapoli, Dist, Ratnagiri -  415 712,  Maharashtra Regd. Office : 1013/10, Swastik Co-Op Hsg Soc., Model Colony, Pune - 411 016</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-3">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Promoted By:</h4>
+								<img class="img-responsive logo-footer" src="images/logo.png" alt="Logo" />
+								<img class="img-responsive logo-footer" src="images/RoyalHospitality.png" alt="Logo" style="width: 106px;" />
+							</div>
+						</div>
+					</div>								
+				</div><hr>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+						<span class="footer-disclaimer">Disclaimer: All information and images are for guidance only and subject to statutory approvals. The developer reserves the right to change the specifications without any notice.</span>						
+					</div>					
+				</div>
+			</div>
+		</div>		
+		<div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="footer_bar_content">
+							<div class="cr text-center">©Copyrights 2019 Royal Goldfieldd | All Rights Reserved.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+<!--validation script start -->
+<script>  
+$(document).ready(function(){  
+    $('.register-property').parsley();
+ 
+ $('.register-property').on('submit', function(event){
+  event.preventDefault();
+  if($('.register-property').parsley().isValid())
+  {
+   $.ajax({
+    url:"http://crmdemo.ap-south-1.elasticbeanstalk.com/LandingPageServlet",
+    method:"POST",
+    data:$(this).serialize(),
+    beforeSend:function(){
+     $('#submit').attr('disabled','disabled');
+     $('#submit').val('Submitting...');
+    },
+    success:function(data)
+    {
+     $('.register-property')[0].reset();
+     $('.register-property').parsley().reset();
+     $('#submit').attr('disabled',false);
+     $('#submit').val('Submit');
+     alert(data);
+    }
+   });
+  }
+ });
+});  
+</script><!--validation script End -->
+
+<script type="text/javascript">
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+        
+        // LOOP THROUGH EACH ELEMENT.
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].type == 'text' && ele[i].value == '' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }    
+</script>
+
+<script type="text/javascript">
+    var fname = document.getElementById("fname");
+
+    var invalidChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    fname.addEventListener("keydown", function(e) {
+      if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+      }
+    });
+</script>
+
+<script type="text/javascript">
+	function isNumber(event) {
+	   event = (event) ? event : window.event;
+	   var charCode = (event.which) ? event.which : event.keyCode;
+	   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	       return false;
+	   }
+	       return true;
+	}
+	$('#fname, #phone, #mail, #city').bind('keyup', function() {
+	    if(allFilled()) $('#submit').removeAttr('disabled');
+	});
+	        
+	function allFilled() {
+		var filled = true;
+	    $('body input').each(function() {
+	        if($(this).val() == '') filled = false;
+	    });
+	    return filled;
+	}	
+</script>
+
+<script>
+	$('.main_nav ul li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });
+	$('.mobile-menu li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });    
+     $(".navbar ul li a").click(function(){
+        $(".navbar-collapse").toggleClass("in");
+    });
+</script>
+
+<script type="text/javascript">
+	$("ul.mobile-menu li a").click(function (event) {
+        $(".menu.trans_500").toggleClass('active');
+    });
+</script>
+
+<script type="text/javascript">
+    $("#header-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#life-nature-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#property-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },             
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#flat-plan-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },            
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+</body>
+</html>

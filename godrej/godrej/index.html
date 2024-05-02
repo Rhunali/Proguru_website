@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Godrej | Forest Grove</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css" />
+<link rel="stylesheet" type="text/css" href="styles/animate.css" />
+<link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.min.css" />
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+<link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+</head>
+<body>
+<div class="super_container">
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="header_content">
+					<div class="row">
+						<div class="col-6 col-sm-3 col-md-3 col-lg-3">
+							<div class="logo">
+								<a href="http://mypropguru.com/godrej"><img src="images/logo.png" alt=""></a>
+							</div>
+						</div>
+						<div class="col-6 col-sm-9 col-md-12 col-lg-9">
+							<nav class="main_nav">
+								<ul>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#features">Features</a></li>
+									<li><a href="#amenities">Amenities</a></li>
+									<!--<li><a href="#gallery">Gallery</a></li>-->
+									<li><a href="#floor-plans">Floor Plans</a></li>
+									<li><a href="#home">Contact</a></li>
+								</ul>
+							</nav>
+							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column">
+			<ul class="mobile-menu">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Features</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<!--<li><a href="#gallery">Gallery</a></li>-->
+				<li><a href="#floor-plans">Floor Plans</a></li>
+				<li><a href="#home">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+	<div class="home" id="home">
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div id="header-carousel" class="owl-carousel owl-theme home_slider">
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/Girl_Top.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_title"><span class="tagline">A home where 1100 trees greet you every morning.</span></div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li><span>2 BHK</span></li>
+												<li><span>3 BHK</span></li>
+											</ul>
+										</div>
+										<div class="home_price">Launching 2 & 3 RHK homes<br> starting from ₹ 44.95 Lakh (all inclusive)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="home_slider_background" style="background-image:url(images/GodrejOneBuilding.jpg)"></div>
+					<div class="overlay"></div>
+					<div class="slide_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="slide_content">
+										<div class="home_title"><span class="tagline">A home where 1100 trees greet you every morning.</div>
+										<div class="home_details">
+											<ul class="home_details_list d-flex flex-row align-items-center justify-content-start">
+												<li><span>2 BHK</span></li>
+												<li><span>3 BHK</span></li>
+											</ul>
+										</div>
+										<div class="home_price">Launching 2 & 3 RHK homes<br> starting from ₹ 44.95 Lakh (all inclusive)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>								
+			</div>
+		</div>
+	</div>
+
+	<div class="register-form">
+		<div class="form-title">
+			<h3>Register For Free!</h3>
+		</div>
+		<form class="register-property" action="" method="post">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="fname" name="fname" class="form-control" placeholder="Name*" required data-parsley-pattern="^[a-zA-Z\s]+$" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="tel" id="phone" name="phone" class="form-control" placeholder="Mobile No*" maxlength="10" required pattern="[6|7|8|9][0-9]{9}" data-parsley-length="[10, 10]" data-parsley-trigger="keyup" onchange="manage(this)" onkeypress="return isNumber(event)" />
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="mail" name="mail" class="form-control" placeholder="Email ID*" required data-parsley-type="email" data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>
+				</div>
+				<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="form-group">
+						<input type="text" id="city" name="city" class="form-control" placeholder="City*" required data-parsley-trigger="keyup" onchange="manage(this)" />
+					</div>				    
+				</div>-->				
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		        	<input type="hidden" id="fname" name="company" value="TEST" />
+					<input type="hidden" id="fname" name="campaign" value="TEST-CAMPAIGN" />
+
+					<input type="hidden" name="source" id="source" value="FB" />
+		        	<input type="hidden" name="medium" id="medium" value="FB_Forms" />
+
+					<input type="submit" name="submit" id="submit" value="Submit" class="btn btn-success"  disabled />
+					<!-- onclick="window.location.href='http://mypropguru.com/godrej/Thankyou.php';" -->
+				</div>												
+			</div>
+		</form>
+	</div>
+
+	<!-- Life in Nature -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2>About <span class="green">Godrej</span></h2>
+				</div><br>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 text-center">
+					<div class="abt-content">
+						<p>Godrej Properties brings the Godrej Group philosophy of innovation, sustainability, and excellence to the real estate industry. Each Godrej Properties’ development combines a 122–year legacy of excellence and trust with a commitment to cutting-edge design and technology.</p><br>
+
+						<h4 class="text-left">In recent years, Godrej Properties has received over 250 awards and recognitions:</h4>
+						<ul>
+							<li>'Real Estate Company of the year' - Construction Week Awards 2019</li>
+							<li>'Porter Prize: For Leveraging Unique Activities' - Porter Prize 2019</li>
+							<li>'Wealth Creator among The Next 500 companies' - Fortune India</li>
+							<li>'Top 75 workplace for Women in India' - Great Place to work® Institute (GPTW)</li>
+							<li>'Equality and Diversity Champion' - APRERA Property Leaders’ SummitShanghai</li>
+						</ul><br><br>						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-4 text-center">
+					<div class="contain-img space-bottom">
+						<img class="img-responsive" src="images/About_Img.jpg" alt="About" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h4 class="text-left">Pune Projects:</h4>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="abt-content">
+						<ul>
+							<li><b>Godrej Elements, Pune</b><br> RoSPA Silver Award-Royal Society for Prevention of Accidents For Health and Safety Performance</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<div class="abt-content">					
+						<ul>
+							<li><b>Godrej 24, Pune</b><br> Gold Award-Apex India Foundation Safety Award</li>
+						</ul>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div><!-- End Life in Nature -->
+
+	<!-- Additional Features -->
+	<div class="additional-features">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+					<h2>Pune - The City of Progression</h2>
+					<p>A naturally beautiful city known for its greenery and educational Institutes, Pune has seen exponential growth in recent years. From a quiet city to a rapidly-growing IT goldmine of Western India, it hastransformed itself into a lucrative investment destination.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center"></div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<div class="feature-box">
+						<h3>The Pune Advantage</h3>
+						<ul>
+							<li>Voted as India's most liveable city in Ease of Living index, 2018 released by the Ministry of Housing and Urban Affairs</li>
+							<li>Declared as a Smart City by the Government of India Second biggest IT hub in India</li>
+							<li>Strong manufacturing base in Auto and Engineering Called the ‘Oxford of the East’ for its 811 colleges</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End Additional Features -->
+
+	<!-- About Forest Grove -->
+	<div class="about-forest" id="about">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-6 col-xl-7 text-center"></div>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-6 col-xl-5 text-center">
+					<h2>Welcome To <span class="green name">Forest Grove</span><br><span class="about-forest-city">Mamurdi, Pune</span></h2>
+					<p>Imagine a life where your mornings will be serene and nights will be as calm as a breath of fresh air. Imagine that your everyday relaxation will be enjoying in a lavish clubhouse with your family; and imagine all these things at a well-connected location. Done imagining? Now it’s time for you to start living your imagination at Godrej Forest Grove. Here, you will experience "Tree-Side Living" with expansive green spaces and world-class indulgences for you to flourish every day.</p>
+				</div>
+			</div>
+		</div>
+	</div> <!-- End About Forest Grove -->	
+
+	<!-- Features 1 -->
+	<div class="add-features" id="features">
+		<div class="row no-gutters">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+				<div class="contain-img">
+					<img class="img-responsive" src="images/Godrej_ForestGroveBuildings.jpg" alt="Godrej Forest Grove Buildings" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+				<div class="feature-content">
+					<h2><span class="green">Why is Mamurdi</span> The Next Real-Estate Hub?</h2>
+					<hr>
+					<ul>
+						<li>One of the top residential hubs in Pune, Mamurdi is the first town, strategically located after the Mumbai-Pune Expressway.</li>
+						<li>Located in North-Western Pune, it is surrounded with natural greens and gets ample fresh air.</li>
+						<li>It is well-connected to other parts of Pune such as Pimpri, Chinchwad, Chakan and Talegaon. Areas like Aundh, Wakad, Hinjawadi, Baner, Pimple Saudagar etc. are also easily accessible from the region.</li>
+						<li>The development is nestled at the intersection of three major routes viz. Old NH-4 Highway, Katraj-Dehu Road and Mumbai-Pune Expressway</li>
+					</ul>
+				</div>
+			</div>				
+		</div>
+	</div> <!-- End Features 1 -->
+
+	<!-- Features 2 -->
+	<div class="add-features">
+		<div class="row no-gutters">
+			<div class="col-12 d-sm-block col-sm-12 d-md-none d-lg-none d-xl-none">
+				<div class="contain-img">
+					<img class="img-responsive" src="images/Godrej_ForestGroveBuildings1.jpg" alt="Godrej Forest Grove Buildings" />
+				</div>
+			</div>			
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="feature-content">
+					<h2><span class="green">Our Growth</span> In Mamurdi</h2>
+					<hr>
+					<p>The most important aspect of our legacy has been, spreading unlimited smiles across families year after year. As we ventured in Mamurdi with our two projects titled as Godrej Park Greens and Godrej Nurture; these projects have enabled us to sell 1100+ units successfully, while giving the resident families a million reasons to be happy.</p>
+				</div>
+			</div>
+			<div class="d-none d-sm-none d-md-block col-md-6 d-lg-block col-lg-6">
+				<div class="contain-img">
+					<img class="img-responsive" src="images/Godrej_ForestGroveBuildings1.jpg" alt="Godrej Forest Grove Buildings" />
+				</div>
+			</div>
+		</div>
+	</div> <!-- End Features 2 -->
+
+	<div class="video-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<video id="digital-mega-township-video" controls="controls" controlslist="nodownload" oncontextmenu="return false;">
+						<source src="images/ForestGroveIntro.mp4" type="">
+					</video>
+				</div>
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+					<p><i class="fa fa-quote-left"></i> Go through our video for the details of Godrej Forest Grove.<i class="fa fa-quote-right"></i></p>
+				</div>
+			</div>
+		</div>					
+	</div>	
+
+	<div class="specifications">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+				<img class="img-responsive" src="images/Specifications.jpg" alt="Specifications" />
+			</div>
+		</div>	
+	</div>
+
+	<!-- Amenities -->
+	<div class="amenities" id="amenities">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="life-content">
+					<h3>Amenities</h3>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+							<ul>
+								<li>Yoga Lawn</li>
+								<li>Mini Golf</li>
+								<li>Children's Play Field</li>
+								<li>Youth Plaza</li>
+								<li>Lawn With Board Games Deck</li>
+								<li>Senior's Garden and Pavilion</li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+							<ul>
+								<li>Foliage Archway</li>
+								<li>Flower Cascades</li>
+								<li>Bamboo Grove</li>
+								<li>Lawn</li>
+								<li>Swimming Pool</li>
+								<li>Pool Deck</li>								
+							</ul>
+						</div>
+						<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+							<ul>
+								<li>Canopy Walk</li>
+								<li>Toddler's Pool</li>
+								<li>Activity Deck</li>
+								<li>Box Cricket</li>
+								<li>Multipurpose Court</li>
+								<li>Living Maze</li>
+							</ul>
+						</div>
+						<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-2">
+							<ul>
+								<li>Bounce Land</li>
+								<li>Jungle Gym</li>
+								<li>Senior's Corner</li>
+								<li>Central Promenade</li>
+								<li>Gymnasium</li>
+								<li>Indoor Jacuzzi</li>								
+							</ul>
+						</div>
+						<div class="col-12 col-sm-4 col-md-6 col-lg-5 col-xl-3">
+							<ul>
+								<li>Imagination Lab, Kids Graffiti, Kids Room</li>
+								<li>Women's Zone</li>
+								<li>Business Centre</li>
+								<li>Spa</li>
+								<li>Audio Video Room</li>
+								<li>Multipurpose Hall</li>								
+							</ul>
+						</div>
+					</div>						
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 space">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/MultipurposeCourt.jpg" alt="Multipurpose Court" />
+							<h5>Multipurpose Court</h5>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/CentralPromenade.jpg" alt="Central Promenade" />
+							<h5>Central Promenade</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/SittingArea.jpg" alt="Sitting Area" />
+							<h5>Sitting Area</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/TreeHouses.jpg" alt="Tree Houses" />
+							<h5>Tree Houses</h5>
+						</div>
+					</div>		
+				</div>
+				<div class="row">					
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/PartyLawn.jpg" alt="Party Lawn" />
+							<h5>Party Lawn</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/2-TierPlayKidsPool.jpg" alt="2 Tier Play Kids Pool" />
+							<h5>2 Tier Play Kids Pool</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/ForestBoardWalk.jpg" alt="Forest Board Walk" />
+							<h5>Forest Board Walk</h5>
+						</div>
+					</div>					
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/RainPlaza.jpg" alt="Rain Plaza" />
+							<h5>Rain Plaza</h5>
+						</div>
+					</div>										
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/SkateSportsPark.jpg" alt="Skate Sports Park" />
+							<h5>Skate Sports Park</h5>
+						</div>
+					</div>		
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/AmphitheatreSeating.jpg" alt="Amphitheatre Seating" />
+							<h5>Amphitheatre Seating</h5>
+						</div>
+					</div>					
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/TotLot.jpg" alt="Tot Lot" />
+							<h5>Tot Lot</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/PaintBallActivity.jpg" alt="Paint Ball Activity" />
+							<h5>Paint Ball Activity</h5>
+						</div>
+					</div>								
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/IndoorFunctionalWorkoutZone.jpg" alt="Indoor Functional Workout Zone" />
+							<h5>Indoor Functional Workout Zone</h5>
+						</div>
+					</div>					
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/DigitalRoom.jpg" alt="Digital Room" />
+							<h5>Digital Room</h5>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/KidsGym.jpg" alt="Kids Gym" />
+							<h5>Kids Gym</h5>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="amenity-box">
+							<img class="img-responsive" src="images/OpenCafeteria.jpg" alt="Open Cafeteria" />
+							<h5>Open Cafeteria</h5>
+						</div>
+					</div>									
+				</div>																
+			</div>
+		</div>
+	</div>
+	<!-- End Amenities -->	
+
+	<!-- Project Carousel -->
+	<!--<div class="project-model" id="gallery">
+		<div class="regular-title">
+			<h2>Property Overview</h2>
+		</div>		
+		<div id="property-carousel" class="owl-carousel">
+			<div class="property-image">
+				<a href="images/Gallery/Puraniks_Oxygreen.jpg" data-fancybox data-caption="Puraniks Oxygreen View"><img class="img-responsive" src="images/Gallery/Puraniks_Oxygreen.jpg" alt="Puraniks Oxygreen View" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/SwimmingPool.jpg" data-fancybox data-caption="Oxygreen Swimming Pool"><img class="img-responsive" src="images/Gallery/SwimmingPool.jpg" alt="Oxygreen Swimming Pool" /></a>
+			</div>
+			<div class="property-image">
+				<a href="images/Gallery/Garden.jpg" data-fancybox data-caption="Garden"><img class="img-responsive" src="images/Gallery/Garden.jpg" alt="Garden" /></a>
+			</div>	
+			<div class="property-image">
+				<a href="images/Gallery/Garden1.jpg" data-fancybox data-caption="Garden top View"><img class="img-responsive" src="images/Gallery/Garden1.jpg" alt="Garden top View" /></a>
+			</div>
+		</div>
+	</div>--> <!-- End Project Carousel -->
+
+	<div class="floor-plans" id="floor-plans">
+		<div class="regular-title">
+			<h2>Floor Plans</h2>
+		</div>
+
+		<div id="flat-plan-carousel" class="owl-carousel">
+			<div class="floor-plan-image">
+				<a href="images/Flats/ForestGrove_2BHK.jpg" data-fancybox data-caption="Forest Grove 2BHK"><img class="img-responsive" src="images/Flats/ForestGrove_2BHK.jpg" alt="Forest Grove 2BHK" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/ForestGrove_3BHK.jpg" data-fancybox data-caption="Forest Grove 3BHK"><img class="img-responsive" src="images/Flats/ForestGrove_3BHK.jpg" alt="Forest Grove 3BHK" /></a>
+			</div>						
+			<div class="floor-plan-image">
+				<a href="images/Flats/Master_Layout.jpg" data-fancybox data-caption="Master Layout"><img class="img-responsive" src="images/Flats/Master_Layout.jpg" alt="Master Layout" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Parkland_Plan.jpg" data-fancybox data-caption="Parkland Layout"><img class="img-responsive" src="images/Flats/Parkland_Plan.jpg" alt="Parkland Layout" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Playland_Plan.jpg" data-fancybox data-caption="Playland Layout"><img class="img-responsive" src="images/Flats/Playland_Plan.jpg" alt="Playland Layout" /></a>
+			</div>
+			<div class="floor-plan-image">
+				<a href="images/Flats/Woodland_Plan.jpg" data-fancybox data-caption="Woodland Layout"><img class="img-responsive" src="images/Flats/Woodland_Plan.jpg" alt="Woodland Layout" /></a>
+			</div>			
+		</div>	
+	</div>
+
+	<div class="site-location">
+		<div class="row no-gutters">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="location-map">
+					<img class="img-responsive" src="images/LocationMap.jpg" alt="Location Map" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer" id="contact">
+		<div class="footer_main">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="footer_about">
+							<div class="footer_about_text">
+								<h4>Site Address</h4>
+								<p>Godrej Forest Grove, Opp. Symbiosis Open University, Next to MCA Stadium, Mamurdi, Pune - 412 101.</p>
+							</div>
+						</div>
+					</div>				
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="footer_about_text">
+							<h4>Maharera</h4>
+						</div>						
+						<div class="footer_latest loans-available">
+							<a href="https://maharera.mahaonline.gov.in/" target="_blank"><img class="img-responsive maha-logo" src="images/maharera.png"></a>
+							<p class="mobile-text">Maharera Registration Number: <br>P52100023129</p>							
+						</div>
+					</div>				
+				</div><hr>
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+						<span class="footer-disclaimer">Disclaimer: All information and images are for guidance only and subject to statutory approvals. The developer reserves the right to change the specifications without any notice.</span>						
+					</div>					
+				</div>
+			</div>
+		</div>		
+		<div class="footer_bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="footer_bar_content">
+							<div class="cr text-center">©Copyrights 2019 Puraniks - Oxygreen | All Rights Reserved.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="http://parsleyjs.org/dist/parsley.js"></script>
+
+<!--validation script start -->
+<script>  
+$(document).ready(function(){  
+    $('.register-property').parsley();
+ 
+ $('.register-property').on('submit', function(event){
+  event.preventDefault();
+  if($('.register-property').parsley().isValid())
+  {
+   $.ajax({
+    url:"",
+    method:"POST",
+    data:$(this).serialize(),
+    beforeSend:function(){
+     $('#submit').attr('disabled','disabled');
+     $('#submit').val('Submitting...');
+    },
+    success:function(data)
+    {
+     $('.register-property')[0].reset();
+     $('.register-property').parsley().reset();
+     $('#submit').attr('disabled',false);
+     $('#submit').val('Submit');
+     alert(data);
+    }
+   });
+  }
+ });
+});  
+</script><!--validation script End -->
+
+<script type="text/javascript">
+    function manage(txt) {
+        var bt = document.getElementById('submit');
+        var ele = document.getElementsByTagName('input'); 
+        
+        // LOOP THROUGH EACH ELEMENT.
+        for (i = 0; i < ele.length; i++) {
+
+            // CHECK THE ELEMENT TYPE.
+            if (ele[i].type == 'text' && ele[i].value == '' && ele[i].value == '') {
+                bt.disabled = true;    // Disable the button.
+                return false;
+            }
+            else {
+                bt.disabled = false;   // Enable the button.
+            }
+        }
+    }    
+</script>
+
+<script type="text/javascript">
+    var fname = document.getElementById("fname");
+
+    var invalidChars = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
+    fname.addEventListener("keydown", function(e) {
+      if (invalidChars.includes(e.key)) {
+            e.preventDefault();
+      }
+    });
+</script>
+
+<script type="text/javascript">
+	function isNumber(event) {
+	   event = (event) ? event : window.event;
+	   var charCode = (event.which) ? event.which : event.keyCode;
+	   if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+	       return false;
+	   }
+	       return true;
+	}
+	$('#fname, #phone, #mail').bind('keyup', function() {
+	    if(allFilled()) $('#submit').removeAttr('disabled');
+	});
+	        
+	function allFilled() {
+		var filled = true;
+	    $('body input').each(function() {
+	        if($(this).val() == '') filled = false;
+	    });
+	    return filled;
+	}	
+</script>
+
+<script>
+	$('.main_nav ul li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });
+	$('.mobile-menu li a').click(function () {
+    	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+        	|| location.hostname === this.hostname) {
+            	var hashStr = this.hash.slice(1);
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + hashStr + ']');
+
+            if (target.length) {
+                $('html,body').animate({ scrollTop: target.offset().top }, 1000);
+                window.location.hash = hashStr;
+                return false;
+            }
+        }
+    });    
+     $(".navbar ul li a").click(function(){
+        $(".navbar-collapse").toggleClass("in");
+    });
+</script>
+
+<script type="text/javascript">
+	$("ul.mobile-menu li a").click(function (event) {
+        $(".menu.trans_500").toggleClass('active');
+    });
+</script>
+
+<script type="text/javascript">
+    $("#header-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#life-nature-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#property-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },             
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+
+<script type="text/javascript">
+    $("#flat-plan-carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },            
+            1000: {
+                items: 3
+            }
+        }
+    })
+</script>  <!-- End Custom Javascript -->
+</body>
+</html>
